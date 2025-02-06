@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: japan-stock-checker
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    plan: free
+    repo: https://github.com/LifePublishing/japan_stock_checker
+    branch: main
+    autoDeploy: true
